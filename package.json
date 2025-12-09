@@ -1,12 +1,29 @@
 {
-  "name": "lockbloom",
-  "version": "0.1.0",
+  "name": "lockbloom-website",
+  "version": "1.0.0",
+  "description": "Production-grade marketing website for LockBloom password manager - Optimized for millions of organic users with perfect Lighthouse scores",
   "private": true,
+  "author": "Darpan Neve <darpanneve3@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarpanNeve/lockbloom"
+  },
+  "keywords": [
+    "lockbloom",
+    "password-manager",
+    "security",
+    "encryption",
+    "marketing-website",
+    "nextjs",
+    "seo-optimized"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
     "next": "16.0.7",
@@ -22,5 +39,9 @@
     "eslint-config-next": "16.0.7",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
