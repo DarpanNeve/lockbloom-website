@@ -9,10 +9,14 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-2xl shadow-lg shadow-blue-500/50">
-                                🔐
+                            <div className="relative w-8 h-8">
+                                <img
+                                    src="/logo.svg"
+                                    alt="LockBloom Logo"
+                                    className="object-contain"
+                                />
                             </div>
-                            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
+                            <span className="text-2xl font-bold text-zinc-900 dark:text-white tracking-tight">
                                 LockBloom
                             </span>
                         </div>

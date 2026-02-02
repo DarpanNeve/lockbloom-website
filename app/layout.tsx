@@ -91,7 +91,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo.svg", type: "image/svg+xml" },
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
@@ -129,7 +129,7 @@ const structuredData = {
       description:
         "Privacy-focused password manager with AES-256-GCM encryption, biometric authentication, and 100% offline storage.",
       downloadUrl: appUrl,
-      screenshot: `${siteUrl}/screenshots/main.png`,
+      screenshot: `${siteUrl}/screenshots/screenshot.png`,
       author: {
         "@type": "Person",
         name: "Darpan Neve",

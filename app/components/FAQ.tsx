@@ -29,16 +29,13 @@ const faqs = [
 
 export default function FAQ() {
     return (
-        <section className="relative py-20 lg:py-32">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-zinc-50 dark:bg-zinc-900 border-y border-zinc-200 dark:border-zinc-800">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-zinc-900 dark:text-white">
-                        Frequently Asked{" "}
-                        <span className="bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
-                            Questions
-                        </span>
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-zinc-900 dark:text-white tracking-tight">
+                        Frequently Asked <span className="text-blue-600 dark:text-blue-500">Questions</span>
                     </h2>
-                    <p className="text-xl text-zinc-600 dark:text-zinc-400">
+                    <p className="text-lg text-zinc-600 dark:text-zinc-400">
                         Everything you need to know about LockBloom
                     </p>
                 </div>
@@ -47,12 +44,12 @@ export default function FAQ() {
                     {faqs.map((faq, index) => (
                         <details
                             key={index}
-                            className="group bg-zinc-50/90 dark:bg-zinc-900/90 backdrop-blur-xl rounded-2xl border border-black/10 dark:border-white/10 hover:border-black/20 dark:hover:border-white/20 transition-all duration-300"
+                            className="group bg-white dark:bg-zinc-950 rounded-xl border border-zinc-200 dark:border-zinc-800 open:border-blue-500/50 dark:open:border-blue-500/50 transition-all duration-200"
                         >
-                            <summary className="cursor-pointer p-6 font-bold text-lg flex justify-between items-center text-zinc-900 dark:text-white marker:content-none list-none">
+                            <summary className="cursor-pointer p-6 font-semibold text-lg flex justify-between items-center text-zinc-900 dark:text-white marker:content-none list-none select-none">
                                 <span>{faq.q}</span>
                                 <svg
-                                    className="w-6 h-6 transition-transform group-open:rotate-180"
+                                    className="w-5 h-5 text-zinc-400 dark:text-zinc-500 transition-transform duration-200 group-open:rotate-180 group-open:text-blue-600 dark:group-open:text-blue-500"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -60,7 +57,7 @@ export default function FAQ() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                             </summary>
-                            <div className="px-6 pb-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                            <div className="px-6 pb-6 text-zinc-600 dark:text-zinc-400 leading-relaxed text-base border-t border-transparent group-open:border-zinc-100 dark:group-open:border-zinc-800/50 pt-4">
                                 {faq.a}
                             </div>
                         </details>

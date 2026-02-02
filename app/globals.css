@@ -6,45 +6,42 @@
   --font-sans: Inter, system-ui, -apple-system, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
 
-  --color-primary-blue: #3b82f6;
-  --color-primary-cyan: #06b6d4;
-  --color-primary-purple: #a855f7;
-  --color-primary-pink: #ec4899;
+  --color-primary: #2563eb; /* Royal Blue - Professional & Trustworthy */
+  --color-primary-dark: #1d4ed8;
+  --color-accent: #64748b; /* Slate */
 }
 
 :root {
   color-scheme: dark;
 
-  --bg-primary: #000000;
-  --bg-secondary: #18181b;
-  --bg-tertiary: #27272a;
+  /* Solid Dark Theme - Professional & Sleek */
+  --bg-primary: #09090b; /* Zinc 950 */
+  --bg-secondary: #18181b; /* Zinc 900 */
+  --bg-tertiary: #27272a; /* Zinc 800 */
 
-  --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-tertiary: #71717a;
+  --text-primary: #fafafa; /* Zinc 50 */
+  --text-secondary: #a1a1aa; /* Zinc 400 */
+  --text-tertiary: #71717a; /* Zinc 500 */
 
-  --border-color: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(255, 255, 255, 0.2);
-
-  --gradient-primary: linear-gradient(to bottom, #000000, #18181b, #000000);
+  --border-color: #27272a;
+  --border-hover: #3f3f46;
 }
 
 :root.light,
 :root[data-theme="light"] {
   color-scheme: light;
 
+  /* Solid Light Theme - Clean & Crisp */
   --bg-primary: #ffffff;
-  --bg-secondary: #f4f4f5;
-  --bg-tertiary: #e4e4e7;
+  --bg-secondary: #fafafa; /* Zinc 50 */
+  --bg-tertiary: #f4f4f5; /* Zinc 100 */
 
-  --text-primary: #09090b;
-  --text-secondary: #52525b;
-  --text-tertiary: #71717a;
+  --text-primary: #09090b; /* Zinc 950 */
+  --text-secondary: #52525b; /* Zinc 600 */
+  --text-tertiary: #71717a; /* Zinc 500 */
 
-  --border-color: rgba(0, 0, 0, 0.1);
-  --border-hover: rgba(0, 0, 0, 0.2);
-
-  --gradient-primary: linear-gradient(to bottom, #ffffff, #f4f4f5, #ffffff);
+  --border-color: #e4e4e7;
+  --border-hover: #d4d4d8;
 }
 
 .theme-loading {
@@ -91,7 +88,6 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -126,7 +122,6 @@ html {
 }
 
 @keyframes glow {
-
   0%,
   100% {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);

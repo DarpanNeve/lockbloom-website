@@ -4,8 +4,8 @@
     "description": "Privacy-focused password manager with military-grade AES-256-GCM encryption, biometric authentication, and 100% offline storage. Keep your passwords secure with zero-knowledge architecture.",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#3b82f6",
+    "background_color": "#09090b",
+    "theme_color": "#2563eb",
     "orientation": "portrait-primary",
     "categories": [
         "security",
@@ -30,7 +30,7 @@
     ],
     "screenshots": [
         {
-            "src": "/screenshots/main.png",
+            "src": "/screenshots/screenshot.png",
             "sizes": "1080x1920",
             "type": "image/png",
             "form_factor": "narrow"
