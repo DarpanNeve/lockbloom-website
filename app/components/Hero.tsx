@@ -12,9 +12,9 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative overflow-hidden pt-32 pb-20 bg-white dark:bg-zinc-950">
+        <section className="relative overflow-hidden pt-24 pb-12 bg-white dark:bg-zinc-950">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+                <div className="grid lg:grid-cols-2 gap-16 items-center mb-10">
                     {/* Left Column: Text Content */}
                     <div
                         className={`text-center lg:text-left transform transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
@@ -27,7 +27,7 @@ export default function Hero() {
                                 Securely Locked.
                             </span>
                         </h1>
-                        <p className="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        <p className="text-xl sm:text-2xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
                             Military-grade encryption meets elegant design. Keep your credentials safe
                             with <strong className="font-semibold text-zinc-900 dark:text-zinc-50">zero-knowledge</strong>{" "}
                             architecture and <strong className="font-semibold text-zinc-900 dark:text-zinc-50">100% offline</strong>{" "}
@@ -59,7 +59,7 @@ export default function Hero() {
                                 <span>GitHub</span>
                             </a>
                         </div>
-                        <div className="mt-10 flex justify-center lg:justify-start gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-500">
+                        <div className="mt-8 flex justify-center lg:justify-start gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-500">
                             <div className="flex items-center gap-2">
                                 <div className="w-2 h-2 rounded-full bg-green-500"></div>
                                 <span>100% Free</span>
@@ -95,7 +95,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="mt-8 border-t border-zinc-100 dark:border-zinc-900 pt-12">
+                <div className="mt-8 border-t border-zinc-100 dark:border-zinc-900 pt-8">
                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
                         <div className="space-y-1">
                             <div className="text-3xl font-bold text-zinc-900 dark:text-white tracking-tight">100+</div>
