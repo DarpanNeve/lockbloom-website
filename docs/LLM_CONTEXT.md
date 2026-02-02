@@ -29,3 +29,9 @@ The LockBloom website is the production-grade marketing platform for the LockBlo
 
 - Logos: `/public/logo.svg`
 - Screenshots: `/public/screenshots/screenshot.png`
+
+## SEO & ASO Strategy
+
+- **Search**: JSON-LD Structured Data, heavily optimized metadata, dynamic sitemap/robots.
+- **ASO Bridge**: Smart App Banners, strict manifest configuration for store linkage.
+- **Traffic**: "LockBloom" brand dominance via accurate entity definition.

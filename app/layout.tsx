@@ -24,27 +24,23 @@ const appUrl = "https://play.google.com/store/apps/details?id=com.dn.lockbloom";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "LockBloom - Secure Password Manager | Military-Grade Encryption",
+    default: "LockBloom - offline Password Manager | Military-Grade Encryption",
     template: "%s | LockBloom",
   },
   description:
-    "LockBloom is a privacy-focused password manager with AES-256-GCM encryption, biometric authentication, and 100% offline storage. Keep your passwords secure with zero-knowledge architecture. No cloud, no tracking, complete control.",
+    "Secure your digital life with LockBloom. The only 100% offline, privacy-first password manager featuring AES-256-GCM encryption and biometric security. No cloud, no tracking.",
   keywords: [
+    "LockBloom",
     "password manager",
-    "secure password storage",
     "offline password manager",
+    "secure password storage",
     "AES-256 encryption",
     "biometric authentication",
-    "zero-knowledge security",
-    "privacy-focused",
-    "military-grade encryption",
-    "password generator",
-    "password organizer",
-    "secure credentials",
-    "local password storage",
-    "open source password manager",
+    "zero-knowledge architecture",
     "Android password manager",
-    "iOS password manager",
+    "privacy tool",
+    "no cloud password manager",
+    "local encryption",
   ],
   authors: [{ name: "Darpan Neve", url: "https://github.com/DarpanNeve" }],
   creator: "Darpan Neve",
@@ -64,24 +60,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "LockBloom - Secure Password Manager | Military-Grade Encryption",
+    title: "LockBloom - The Offline Password Manager",
     description:
-      "Keep your passwords secure with LockBloom - a privacy-focused password manager with AES-256-GCM encryption, biometric authentication, and 100% offline storage.",
+      "Military-grade security, 100% offline. LockBloom keeps your passwords safe with AES-256-GCM encryption and zero-knowledge architecture.",
     siteName: "LockBloom",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "LockBloom - Secure Password Manager",
+        alt: "LockBloom Security Dashboard",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LockBloom - Secure Password Manager",
+    title: "LockBloom - Secure & Offline",
     description:
-      "Privacy-focused password manager with military-grade encryption. 100% offline, zero-knowledge architecture.",
+      "Your passwords, strictly yours. 100% offline password manager with military-grade encryption.",
     images: ["/og-image.png"],
     creator: "@DarpanNeve",
   },
@@ -102,10 +98,13 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "LockBloom",
   },
-  verification: {
-    google: "your-google-site-verification-code",
+  itunes: {
+    appId: "com.dn.lockbloom", // Fallback for some parsers; implies intent
   },
   category: "Security",
+  other: {
+    "google-play-app": "app-id=com.dn.lockbloom",
+  },
 };
 
 const structuredData = {
@@ -120,11 +119,6 @@ const structuredData = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.8",
-        ratingCount: "100",
       },
       description:
         "Privacy-focused password manager with AES-256-GCM encryption, biometric authentication, and 100% offline storage.",
@@ -148,8 +142,6 @@ const structuredData = {
         "Biometric Authentication",
         "100% Offline Storage",
         "Zero-Knowledge Architecture",
-        "Password Generator",
-        "Secure Export/Import",
       ],
     },
     {
@@ -159,21 +151,8 @@ const structuredData = {
       logo: `${siteUrl}/icon-512.png`,
       sameAs: [
         "https://github.com/DarpanNeve/lockbloom",
-        "https://play.google.com/store/apps/details?id=com.dn.lockbloom",
+        appUrl,
       ],
-    },
-    {
-      "@type": "WebSite",
-      name: "LockBloom",
-      url: siteUrl,
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${siteUrl}?q={search_term_string}`,
-        },
-        "query-input": "required name=search_term_string",
-      },
     },
   ],
 };
